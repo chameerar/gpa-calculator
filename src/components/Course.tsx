@@ -9,7 +9,7 @@ interface CourseProps {
 const Course: React.FC<CourseProps> = ({ course, onUpdate }) => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    onUpdate({ ...course, [name]: name === 'credits' || name === 'result' ? parseFloat(value) || '' : value });
+    onUpdate({ ...course, [name]: name === 'credits' || name === 'result' ? value || '' : value });
   };
 
   return (
@@ -38,8 +38,7 @@ const Course: React.FC<CourseProps> = ({ course, onUpdate }) => {
       />
       <input
         name="result"
-        type="number"
-        step="0.01"
+        type="text"
         value={course.result || ''}
         onChange={handleChange}
         placeholder="Result"
