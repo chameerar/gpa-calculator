@@ -49,4 +49,4 @@ npm run preview
 ## Usage
  - **Add a Semester**: Click on "Add Semester" to create a new semester.
  - **Add Courses**: Within each semester, add courses by specifying the course name, code, credits, and result.
-- **Change Credit Type**: Select between "Out of 4.0" or "Out of 4.2" to adjust the GPA calculation.
+ - **Change Credit Type**: Select between "Out of 4.0" or "Out of 4.2" to adjust the GPA calculation.
